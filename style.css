@@ -1,0 +1,97 @@
+
+/* Basic resets and styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navigation styling */
+header {
+    background-color: #f8b400;
+    padding: 20px 0;
+    text-align: center;
+    background-size: cover;
+    border-radius: 10px; /* Rounded corners */
+    animation: moveHeader 2s infinite alternate; /* Header animation */
+}
+
+@keyframes moveHeader {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(10px); }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: black; /* Text color */
+}
+
+.nav-tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-tabs li {
+    margin: 0 15px;
+}
+
+.nav-tabs .tab {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: #ff6347;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.nav-tabs .tab:hover {
+    background-color: #e5533d;
+}
+
+/* Main content styling */
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#video-section {
+    margin-bottom: 50px;
+}
+
+#cooking-video {
+    border: 5px solid #f8b400;
+}
+
+#cuisines-section {
+    margin-top: 50px;
+}
+
+#cuisines-section img {
+    border: 5px solid #f8b400;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(to right, #333, #555); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
